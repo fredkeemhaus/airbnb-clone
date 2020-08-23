@@ -17,7 +17,7 @@ class Message(core_models.TimeStapedModel):
     user = models.ForeignKey(
         "users.User", related_name="messages", on_delete=models.CASCADE
     )
-    conversation = models.ForeignKey(
+    Conversation = models.ForeignKey(
         "Conversation", related_name="messages", on_delete=models.CASCADE
     )
 
